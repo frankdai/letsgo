@@ -43,6 +43,7 @@ export default function Modal ({edit, onClose, fullData}) {
           <option value="badminton">Badminton</option>
           <option value="ropejumping">Rope Jumping</option>
           <option value="hiking">Hiking</option>
+          <option value="bicycle">Bicycle</option>
           <option value="others">Others</option>
         </select>
         <input value={calories} onChange={(event)=>{

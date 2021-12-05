@@ -27,13 +27,22 @@
     "email": "jian.change@moxtra.com",
     "performance": [
       null,
-      null,
       {
-        "type": "running",
+        "type": "rowing",
+        "calories": "205"
+      },
+      {
+        "type": "rowing",
         "calories": 200
       },
-      null,
-      null,
+      {
+        "type": "rowing",
+        "calories": 200
+      },
+      {
+        "type": "basketball",
+        "calories": 200
+      },
       null,
       null
     ]
@@ -41,33 +50,66 @@
   "rory": {
     "email": "rory@moxtra.com",
     "performance": [
+      {
+        "type": "running",
+        "calories": 200
+      },
       null,
+      {
+        "type": "walking",
+        "calories": 200
+      },
       null,
-      null,
-      null,
-      null,
-      null,
+      {
+        "type": "basketball",
+        "calories": 200
+      },
+      {
+        "type": "walking",
+        "calories": 200
+      },
       null
     ]
   },
   "daniel": {
     "email": "daniel.wei@moxtra.com",
     "performance": [
+      {
+        "type": "walking",
+        "calories": "142"
+      },
       null,
+      {
+        "type": "walking",
+        "calories": "201"
+      },
+      {
+        "type": "walking",
+        "calories": "280"
+      },
+      {
+        "type": "basketball",
+        "calories": 200
+      },
       null,
-      null,
-      null,
-      null,
-      null,
-      null
+      {
+        "type": "walking",
+        "calories": "269"
+      }
     ]
   },
   "bingxin": {
     "email": "bingxin.xia@moxtra.com",
     "performance": [
       null,
-      null,
-      null,
+      {
+        "type": "bicycle",
+        "calories": "296"
+      },
+      {
+        "type": "ropejumping",
+        "calories": 200
+      },
       null,
       {
         "type": "basketball",
@@ -84,23 +126,41 @@
     "email": "jun.pan@moxtra.com",
     "performance": [
       null,
+      {
+        "type": "walking",
+        "calories": "201"
+      },
       null,
-      null,
-      null,
+      {
+        "type": "walking",
+        "calories": "205"
+      },
       {
         "type": "basketball",
         "calories": 200
       },
-      null,
+      {
+        "type": "walking",
+        "calories": "202"
+      },
       null
     ]
   },
   "xinsheng": {
     "email": "xinsheng.chen@moxtra.com",
     "performance": [
-      null,
-      null,
-      null,
+      {
+        "type": "running",
+        "calories": "208"
+      },
+      {
+        "type": "running",
+        "calories": "230"
+      },
+      {
+        "type": "running",
+        "calories": "223"
+      },
       null,
       {
         "type": "badminton",
@@ -113,8 +173,14 @@
   "carl": {
     "email": "carl.li@moxtra.com",
     "performance": [
-      null,
-      null,
+      {
+        "type": "bicycle",
+        "calories": "360"
+      },
+      {
+        "type": "bicycle",
+        "calories": "360"
+      },
       null,
       null,
       null,

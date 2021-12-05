@@ -56,6 +56,7 @@ export default function Home({data}) {
               {week.map(day=>{
                 return <th key={day.replace(' ', '')}>{day}</th>
               })}
+              <th>Total</th>
             </tr>
           </thead>
           <tbody>
@@ -74,12 +75,15 @@ export default function Home({data}) {
                       } else {
                         return <td key={i} onClick={()=>{
                           onClickTableCell(k, i)
-                        }} style={{cursor: 'pointer'}}>Add</td>
+                        }} style={{cursor: 'pointer'}}>X</td>
                       }
                     })
                   }
                 })()
               }
+              <td>
+                {data[k] && data[k].performance.filter(k=>k).length}
+              </td>
             </tr>
           })}
           </tbody>
