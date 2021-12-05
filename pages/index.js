@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import {useState} from 'react'
 import dayjs from 'dayjs'
-import Modal from './components/modal'
+import Modal from '../components/modal'
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
