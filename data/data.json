@@ -1,0 +1,140 @@
+{
+  "frank": {
+    "email": "frank.dai@moxtra.com",
+    "performance": [
+      null,
+      {
+        "type": "swimming",
+        "calories": 200
+      },
+      {
+        "type": "swimming",
+        "calories": 200
+      },
+      null,
+      {
+        "type": "badminton",
+        "calories": 200
+      },
+      {
+        "type": "running",
+        "calories": 200
+      },
+      null
+    ]
+  },
+  "jian": {
+    "email": "jian.change@moxtra.com",
+    "performance": [
+      null,
+      null,
+      {
+        "type": "running",
+        "calories": 200
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "rory": {
+    "email": "rory@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "daniel": {
+    "email": "daniel.wei@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "bingxin": {
+    "email": "bingxin.xia@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      {
+        "type": "basketball",
+        "calories": 200
+      },
+      {
+        "type": "hiking",
+        "calories": 200
+      },
+      null
+    ]
+  },
+  "jun": {
+    "email": "jun.pan@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      {
+        "type": "basketball",
+        "calories": 200
+      },
+      null,
+      null
+    ]
+  },
+  "xinsheng": {
+    "email": "xinsheng.chen@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      {
+        "type": "badminton",
+        "calories": 200
+      },
+      null,
+      null
+    ]
+  },
+  "carl": {
+    "email": "carl.li@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "kevin": {
+    "email": "carl.li@moxtra.com",
+    "performance": [
+      null,
+      null,
+      null,
+      null,
+      {
+        "type": "basketball",
+        "calories": 200
+      },
+      null,
+      null
+    ]
+  }
+}

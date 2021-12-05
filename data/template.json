@@ -1,0 +1,38 @@
+{
+  "frank": {
+    "email": "frank.dai@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "jian": {
+    "email": "jian.change@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "rory": {
+    "email": "rory@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "daniel": {
+    "email": "daniel.wei@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "bingxin": {
+    "email": "bingxin.xia@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "jun": {
+    "email": "jun.pan@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "xinsheng": {
+    "email": "xinsheng.chen@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "carl": {
+    "email": "carl.li@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  },
+  "kevin": {
+    "email": "carl.li@moxtra.com",
+    "performance":[null, null, null, null, null, null, null]
+  }
+}
