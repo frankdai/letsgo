@@ -2,8 +2,9 @@ import Head from 'next/head'
 import {useState} from 'react'
 import dayjs from 'dayjs'
 import Modal from '../components/modal'
+import getData from '../components/firebase'
 
-export async function getStaticProps() {
+/*export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
   const fs = require('fs');
@@ -12,6 +13,13 @@ export async function getStaticProps() {
     props: {
       data: JSON.parse(data),
     },
+  }
+}*/
+
+export async function getServerSideProps(context) {
+  let data = await getData()
+  return {
+    props: {data}, // will be passed to the page component as props
   }
 }
 
@@ -67,7 +75,8 @@ export default function Home({data}) {
                 (()=>{
                   let user = data[k]
                   if (user.performance) {
-                    return user.performance.map((date, i)=>{
+                    return [0,1,2,3,4,5,6].map(( i)=>{
+                      const date = user.performance[i]
                       if (date) {
                         return <td key={i}>{
                           `${date.type} ${date.calories}`
@@ -78,11 +87,17 @@ export default function Home({data}) {
                         }} style={{cursor: 'pointer'}}>X</td>
                       }
                     })
+                  } else {
+                    return [0,1,2,3,4,5,6].map(i=>{
+                      return <td key={i} onClick={()=>{
+                        onClickTableCell(k, i)
+                      }} style={{cursor: 'pointer'}}>X</td>
+                    })
                   }
                 })()
               }
               <td>
-                {data[k] && data[k].performance.filter(k=>k).length}
+                {data[k] && data[k].performance?Object.keys(data[k].performance).length:'0'}
               </td>
             </tr>
           })}

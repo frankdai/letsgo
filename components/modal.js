@@ -3,6 +3,9 @@ import {useState} from 'react'
 function saveData(key, day, type, calories, fullData) {
   return new Promise((resolve, reject)=>{
     let copy = JSON.parse(JSON.stringify(fullData))
+    if (!copy[key].performance) {
+      copy[key].performance = {}
+    }
     copy[key].performance[day] = {
       type,
       calories
@@ -14,7 +17,11 @@ function saveData(key, day, type, calories, fullData) {
           'Content-Type': 'application/json'
         },
         method: "POST",
-        body: JSON.stringify(copy)
+        body: JSON.stringify({
+          key,
+          index: day,
+          performance: copy[key].performance
+        })
       }).then(resolve).catch(reject)
   })
 
@@ -22,7 +29,8 @@ function saveData(key, day, type, calories, fullData) {
 
 export default function Modal ({edit, onClose, fullData}) {
   let {key, week, data, day} = edit
-  let intialData = data.performance[day] || {}
+  let performance = data.performance || {}
+  let intialData = performance[day] || {}
   let [model, setModel] = useState(intialData.type)
   let [calories, setCalories] = useState(intialData.calories || 200)
   return <>
