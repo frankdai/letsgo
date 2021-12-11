@@ -78,20 +78,22 @@ export default function Home({data}) {
                     return [0,1,2,3,4,5,6].map(( i)=>{
                       const date = user.performance[i]
                       if (date) {
-                        return <td key={i}>{
+                        return <td key={i} onClick={()=>{
+                          onClickTableCell(k, i)
+                        }}>{
                           `${date.type} ${date.calories}`
                         }</td>
                       } else {
                         return <td key={i} onClick={()=>{
                           onClickTableCell(k, i)
-                        }} style={{cursor: 'pointer'}}>X</td>
+                        }}>X</td>
                       }
                     })
                   } else {
                     return [0,1,2,3,4,5,6].map(i=>{
                       return <td key={i} onClick={()=>{
                         onClickTableCell(k, i)
-                      }} style={{cursor: 'pointer'}}>X</td>
+                      }}>X</td>
                     })
                   }
                 })()
@@ -103,6 +105,7 @@ export default function Home({data}) {
           })}
           </tbody>
         </table>
+        <p style={{'text-align': 'left', 'width': '100%'}}>Click each cell to add or edit</p>
         {edit?<Modal edit={edit} onClose={()=>{setEdit(null)}} fullData={data}>
         </Modal>:null}
       </main>
@@ -149,6 +152,9 @@ export default function Home({data}) {
           padding: 6px; 
           border: 1px solid #ccc; 
           text-align: left; 
+        }
+        td {
+          cursor: pointer;
         }
       `}</style>
     </div>
