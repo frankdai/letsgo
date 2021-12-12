@@ -99,7 +99,20 @@ export default function Home({data}) {
                 })()
               }
               <td>
-                {data[k] && data[k].performance?Object.keys(data[k].performance).length:'0'}
+                {
+                  (()=>{
+                    let performance = data[k]?.performance
+                    let count = 0
+                    if (performance) {
+                      Object.keys(performance).forEach((k)=>{
+                        if (performance[k]) {
+                          count++
+                        }
+                      })
+                    }
+                    return count
+                  })()
+                }
               </td>
             </tr>
           })}
